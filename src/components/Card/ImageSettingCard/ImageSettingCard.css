@@ -1,0 +1,104 @@
+.drop-shadow{ 
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4A5257;
+    opacity: .4;
+    z-index: 1;
+}
+
+.setting-card {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    width: 264px;
+    box-shadow: 0px 14px 40px rgba(15, 44, 71, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 100;    
+    cursor: initial;
+}
+.setting-tab__link {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.setting-tab__link button {
+    background-color: transparent;
+    border: 0;
+    color: #A1A6AA;
+    font-weight: 600;
+    cursor: pointer;
+}
+.setting-tab__link button.selected {
+    color: #4A5257;
+}
+.setting-card__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.setting-card__image button {
+    font-weight: 500;
+    color: #35AEF2;
+    background: transparent;
+    border: 0;
+    margin-top: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.input-group label {
+    margin-left: auto;
+    max-width: 45px;
+    width: 100%;
+    text-align: right;
+    font-weight: 600;
+    font-size: 12px;
+    color: #A1A6AA
+}
+
+.input-group svg {
+    width: 24px;
+    margin-right: 8px;
+}
+
+
+.input-group input[type="range"] {
+    -webkit-appearance:none;
+    height: 6px;
+    border-radius: 5px;
+    background: #A1A6AA;
+    width: 100%;
+    max-width: 152px;
+}
+.input-group input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    appearance:none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #A1A6AA;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+    -webkit-transition:.15s ease-in-out;
+    transition:.15s ease-in-out;
+}
+.input-group input[type="range"]::-moz-range-thumb{
+    width: 18px;
+    height: 18px;
+    border: 2px solid #A1A6AA;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+    -webkit-transition:.15s ease-in-out;
+    transition:.15s ease-in-out;
+}
